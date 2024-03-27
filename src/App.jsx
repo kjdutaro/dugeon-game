@@ -1,18 +1,20 @@
-/* eslint-disable react/no-unescaped-entities */
+import { Header, Footer } from "./components";
+import './index.css';
+
 function App() {
-
-
   return (
     <>
-    <div>
-      <h1>Odin's Dungeon</h1>
-    </div>
-    <form action="">
-      <input type="text" placeholder="Enter name:" />
-      <button>Play Game</button>
-    </form>
+      <Header/>
+      <body>
+      <form>
+        <label>
+          <input name="name" type="text" placeholder="Enter name:" />
+        </label>
+        <button type="submit" value="play">Play Game</button>
+      </form>
+      </body>
+      <Footer/>
     </>
-  )
+  );
 }
-
-export default App
+export default App;
