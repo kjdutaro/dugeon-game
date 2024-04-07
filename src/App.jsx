@@ -1,20 +1,22 @@
 import { Header, Footer } from "./components";
-import './index.css';
+
 
 function App() {
   return (
-    <>
+    <div className="flex justify-center">
+      <div >
       <Header/>
-      <body>
+      <body className="out">
       <form>
         <label>
           <input name="name" type="text" placeholder="Enter name:" />
         </label>
-        <button type="submit" value="play">Play Game</button>
+        <button className="btn-sam" type="submit" value="play">Play Game</button>
       </form>
       </body>
       <Footer/>
-    </>
+    </div>
+    </div>
   );
 }
 export default App;

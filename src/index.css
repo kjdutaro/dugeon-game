@@ -17,8 +17,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 body {
-  @apply m-0 flex justify-center min-w-min:[320px] min-h-[100vh]
+  @apply m-0 flex justify-center min-w-[320px] min-h-[100vh]
 }
 
 h1 {
@@ -26,9 +28,7 @@ h1 {
 }
 
 button {
-  @apply rounded-full border-1 px-[0.6em]
-  py-[1.2em] text-[1em] font-medium cursor-pointer bg-[#1a1a1a]
-  hover:[#646cff]
+
 }
 
 @media (prefers-color-scheme: light) {
@@ -44,3 +44,23 @@ button {
   }
 }
 
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.btn-sample {
+  background-color: #747bff;
+}
+
+
+.btn-sam {
+  @apply border rounded-full  px-[0.6em] text-yellow-400
+  py-[1.2em] text-[1em] font-medium cursor-pointer bg-[#1a1a1a]
+  hover:bg-[#646cff]
+}
+
+.out {
+  @apply border-2 border-indigo-600;
+}
